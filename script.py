@@ -12,24 +12,24 @@ from utils.characs import *
 from utils.write_file import *
 from utils.printing_first import *
 
-#start of program
-print('Project Paralellogram is started! ')
+# start of program
+print("Project Paralellogram is started! ")
 print(get_printing_first())
 
-fig_dic = {} #dictionary of read file
-fig_num = 0 #figures number in dict file
+fig_dic = {}  # dictionary of read file
+fig_num = 0  # figures number in dict file
 
 
-fig_dic = load_data('parallelepipeds.json') #load json dictionary from file
+fig_dic = load_data("parallelepipeds.json")  # load json dictionary from file
 fig_num = get_figures_number(fig_dic)
 
-	#print(fig_num) #print number of figures!
-	#print(fig_sides[0][1])
+# print(fig_num) #print number of figures!
+# print(fig_sides[0][1])
 
-characteristics = get_characs(fig_dic) #Making dictionary.
-	#print(characteristics)
+characteristics = get_characs(fig_dic)  # Making dictionary.
+# print(characteristics)
 
-print(set_write_file(characteristics)) #wrtie calculated json to file.
+print(set_write_file(characteristics))  # wrtie calculated json to file.
 
-#end of program
-print('End of program')
+# end of program
+print("End of the program")
